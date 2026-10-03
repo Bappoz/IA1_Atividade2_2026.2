@@ -1,0 +1,104 @@
+{
+  "paginas_totais": 18,
+  "paginas_por_projeto": {
+    "1": 3,
+    "2": 3,
+    "3": 3,
+    "4": 3,
+    "5": 3,
+    "6": 3
+  },
+  "limite_por_projeto": 4,
+  "alturas_planejadas": [
+    {
+      "projeto": 1,
+      "pagina": 1,
+      "altura_pt": 637
+    },
+    {
+      "projeto": 1,
+      "pagina": 2,
+      "altura_pt": 579.8
+    },
+    {
+      "projeto": 1,
+      "pagina": 3,
+      "altura_pt": 678.0
+    },
+    {
+      "projeto": 2,
+      "pagina": 1,
+      "altura_pt": 612
+    },
+    {
+      "projeto": 2,
+      "pagina": 2,
+      "altura_pt": 603.4
+    },
+    {
+      "projeto": 2,
+      "pagina": 3,
+      "altura_pt": 736.0
+    },
+    {
+      "projeto": 3,
+      "pagina": 1,
+      "altura_pt": 637
+    },
+    {
+      "projeto": 3,
+      "pagina": 2,
+      "altura_pt": 604.8
+    },
+    {
+      "projeto": 3,
+      "pagina": 3,
+      "altura_pt": 651
+    },
+    {
+      "projeto": 4,
+      "pagina": 1,
+      "altura_pt": 637
+    },
+    {
+      "projeto": 4,
+      "pagina": 2,
+      "altura_pt": 582.3
+    },
+    {
+      "projeto": 4,
+      "pagina": 3,
+      "altura_pt": 623
+    },
+    {
+      "projeto": 5,
+      "pagina": 1,
+      "altura_pt": 701
+    },
+    {
+      "projeto": 5,
+      "pagina": 2,
+      "altura_pt": 562.9
+    },
+    {
+      "projeto": 5,
+      "pagina": 3,
+      "altura_pt": 637
+    },
+    {
+      "projeto": 6,
+      "pagina": 1,
+      "altura_pt": 681
+    },
+    {
+      "projeto": 6,
+      "pagina": 2,
+      "altura_pt": 726.6
+    },
+    {
+      "projeto": 6,
+      "pagina": 3,
+      "altura_pt": 729
+    }
+  ]
+}
