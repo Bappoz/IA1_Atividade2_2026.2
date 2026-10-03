@@ -1,0 +1,1621 @@
+{
+  "regras": [
+    {
+      "nome": "R01",
+      "premissas": [
+        "sem_link",
+        "cabo_danificado"
+      ],
+      "conclusao": "falha_fisica"
+    },
+    {
+      "nome": "R02",
+      "premissas": [
+        "falha_fisica"
+      ],
+      "conclusao": "trocar_cabo"
+    },
+    {
+      "nome": "R03",
+      "premissas": [
+        "link_ativo",
+        "sem_ip",
+        "dhcp_inativo"
+      ],
+      "conclusao": "falha_dhcp"
+    },
+    {
+      "nome": "R04",
+      "premissas": [
+        "falha_dhcp"
+      ],
+      "conclusao": "acionar_dhcp"
+    },
+    {
+      "nome": "R05",
+      "premissas": [
+        "ip_valido",
+        "gateway_responde",
+        "dns_falha"
+      ],
+      "conclusao": "falha_dns"
+    },
+    {
+      "nome": "R06",
+      "premissas": [
+        "falha_dns"
+      ],
+      "conclusao": "revisar_dns"
+    },
+    {
+      "nome": "R07",
+      "premissas": [
+        "ip_valido",
+        "gateway_falha",
+        "outros_afetados"
+      ],
+      "conclusao": "falha_gateway"
+    },
+    {
+      "nome": "R08",
+      "premissas": [
+        "falha_gateway"
+      ],
+      "conclusao": "acionar_rede"
+    },
+    {
+      "nome": "R09",
+      "premissas": [
+        "ip_valido",
+        "gateway_responde",
+        "dns_responde",
+        "servico_falha"
+      ],
+      "conclusao": "falha_servico"
+    },
+    {
+      "nome": "R10",
+      "premissas": [
+        "falha_servico"
+      ],
+      "conclusao": "acionar_servico"
+    },
+    {
+      "nome": "R11",
+      "premissas": [
+        "gateway_responde",
+        "gateway_falha"
+      ],
+      "conclusao": "evidencia_inconsistente"
+    },
+    {
+      "nome": "R12",
+      "premissas": [
+        "dns_responde",
+        "dns_falha"
+      ],
+      "conclusao": "evidencia_inconsistente"
+    },
+    {
+      "nome": "R13",
+      "premissas": [
+        "link_ativo",
+        "sem_link"
+      ],
+      "conclusao": "evidencia_inconsistente"
+    },
+    {
+      "nome": "R14",
+      "premissas": [
+        "evidencia_inconsistente"
+      ],
+      "conclusao": "recoletar_evidencias"
+    },
+    {
+      "nome": "R15",
+      "premissas": [
+        "ip_valido",
+        "gateway_responde",
+        "dns_responde",
+        "servico_responde"
+      ],
+      "conclusao": "rede_operacional"
+    },
+    {
+      "nome": "R16",
+      "premissas": [
+        "falha_fisica",
+        "outros_afetados"
+      ],
+      "conclusao": "inspecionar_switch"
+    }
+  ],
+  "execucoes": [
+    {
+      "cenario": "cabo",
+      "fatos": [
+        "cabo_danificado",
+        "sem_link"
+      ],
+      "derivados": [
+        "falha_fisica",
+        "trocar_cabo"
+      ],
+      "metricas_frente": {
+        "regras_disparadas": 2,
+        "fatos_processados": 4
+      },
+      "consultas": [
+        {
+          "consulta": "trocar_cabo",
+          "frente": true,
+          "tras": true,
+          "prova": {
+            "regra": "R02",
+            "conclusao": "trocar_cabo",
+            "premissas": [
+              {
+                "regra": "R01",
+                "conclusao": "falha_fisica",
+                "premissas": [
+                  {
+                    "fato": "sem_link"
+                  },
+                  {
+                    "fato": "cabo_danificado"
+                  }
+                ]
+              }
+            ]
+          },
+          "metricas": {
+            "chamadas": 4,
+            "regras_tentadas": 2
+          }
+        },
+        {
+          "consulta": "acionar_dhcp",
+          "frente": false,
+          "tras": false,
+          "prova": null,
+          "metricas": {
+            "chamadas": 3,
+            "regras_tentadas": 2
+          }
+        },
+        {
+          "consulta": "revisar_dns",
+          "frente": false,
+          "tras": false,
+          "prova": null,
+          "metricas": {
+            "chamadas": 3,
+            "regras_tentadas": 2
+          }
+        },
+        {
+          "consulta": "acionar_rede",
+          "frente": false,
+          "tras": false,
+          "prova": null,
+          "metricas": {
+            "chamadas": 3,
+            "regras_tentadas": 2
+          }
+        },
+        {
+          "consulta": "acionar_servico",
+          "frente": false,
+          "tras": false,
+          "prova": null,
+          "metricas": {
+            "chamadas": 3,
+            "regras_tentadas": 2
+          }
+        },
+        {
+          "consulta": "recoletar_evidencias",
+          "frente": false,
+          "tras": false,
+          "prova": null,
+          "metricas": {
+            "chamadas": 5,
+            "regras_tentadas": 4
+          }
+        },
+        {
+          "consulta": "rede_operacional",
+          "frente": false,
+          "tras": false,
+          "prova": null,
+          "metricas": {
+            "chamadas": 2,
+            "regras_tentadas": 1
+          }
+        },
+        {
+          "consulta": "inspecionar_switch",
+          "frente": false,
+          "tras": false,
+          "prova": null,
+          "metricas": {
+            "chamadas": 5,
+            "regras_tentadas": 2
+          }
+        }
+      ],
+      "provas_frente": {
+        "cabo_danificado": {
+          "fato": "cabo_danificado"
+        },
+        "sem_link": {
+          "fato": "sem_link"
+        },
+        "falha_fisica": {
+          "regra": "R01",
+          "conclusao": "falha_fisica",
+          "premissas": [
+            {
+              "fato": "sem_link"
+            },
+            {
+              "fato": "cabo_danificado"
+            }
+          ]
+        },
+        "trocar_cabo": {
+          "regra": "R02",
+          "conclusao": "trocar_cabo",
+          "premissas": [
+            {
+              "regra": "R01",
+              "conclusao": "falha_fisica",
+              "premissas": [
+                {
+                  "fato": "sem_link"
+                },
+                {
+                  "fato": "cabo_danificado"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cenario": "dhcp",
+      "fatos": [
+        "dhcp_inativo",
+        "link_ativo",
+        "sem_ip"
+      ],
+      "derivados": [
+        "acionar_dhcp",
+        "falha_dhcp"
+      ],
+      "metricas_frente": {
+        "regras_disparadas": 2,
+        "fatos_processados": 5
+      },
+      "consultas": [
+        {
+          "consulta": "trocar_cabo",
+          "frente": false,
+          "tras": false,
+          "prova": null,
+          "metricas": {
+            "chamadas": 3,
+            "regras_tentadas": 2
+          }
+        },
+        {
+          "consulta": "acionar_dhcp",
+          "frente": true,
+          "tras": true,
+          "prova": {
+            "regra": "R04",
+            "conclusao": "acionar_dhcp",
+            "premissas": [
+              {
+                "regra": "R03",
+                "conclusao": "falha_dhcp",
+                "premissas": [
+                  {
+                    "fato": "link_ativo"
+                  },
+                  {
+                    "fato": "sem_ip"
+                  },
+                  {
+                    "fato": "dhcp_inativo"
+                  }
+                ]
+              }
+            ]
+          },
+          "metricas": {
+            "chamadas": 5,
+            "regras_tentadas": 2
+          }
+        },
+        {
+          "consulta": "revisar_dns",
+          "frente": false,
+          "tras": false,
+          "prova": null,
+          "metricas": {
+            "chamadas": 3,
+            "regras_tentadas": 2
+          }
+        },
+        {
+          "consulta": "acionar_rede",
+          "frente": false,
+          "tras": false,
+          "prova": null,
+          "metricas": {
+            "chamadas": 3,
+            "regras_tentadas": 2
+          }
+        },
+        {
+          "consulta": "acionar_servico",
+          "frente": false,
+          "tras": false,
+          "prova": null,
+          "metricas": {
+            "chamadas": 3,
+            "regras_tentadas": 2
+          }
+        },
+        {
+          "consulta": "recoletar_evidencias",
+          "frente": false,
+          "tras": false,
+          "prova": null,
+          "metricas": {
+            "chamadas": 6,
+            "regras_tentadas": 4
+          }
+        },
+        {
+          "consulta": "rede_operacional",
+          "frente": false,
+          "tras": false,
+          "prova": null,
+          "metricas": {
+            "chamadas": 2,
+            "regras_tentadas": 1
+          }
+        },
+        {
+          "consulta": "inspecionar_switch",
+          "frente": false,
+          "tras": false,
+          "prova": null,
+          "metricas": {
+            "chamadas": 3,
+            "regras_tentadas": 2
+          }
+        }
+      ],
+      "provas_frente": {
+        "sem_ip": {
+          "fato": "sem_ip"
+        },
+        "link_ativo": {
+          "fato": "link_ativo"
+        },
+        "dhcp_inativo": {
+          "fato": "dhcp_inativo"
+        },
+        "falha_dhcp": {
+          "regra": "R03",
+          "conclusao": "falha_dhcp",
+          "premissas": [
+            {
+              "fato": "link_ativo"
+            },
+            {
+              "fato": "sem_ip"
+            },
+            {
+              "fato": "dhcp_inativo"
+            }
+          ]
+        },
+        "acionar_dhcp": {
+          "regra": "R04",
+          "conclusao": "acionar_dhcp",
+          "premissas": [
+            {
+              "regra": "R03",
+              "conclusao": "falha_dhcp",
+              "premissas": [
+                {
+                  "fato": "link_ativo"
+                },
+                {
+                  "fato": "sem_ip"
+                },
+                {
+                  "fato": "dhcp_inativo"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cenario": "dns",
+      "fatos": [
+        "dns_falha",
+        "gateway_responde",
+        "ip_valido"
+      ],
+      "derivados": [
+        "falha_dns",
+        "revisar_dns"
+      ],
+      "metricas_frente": {
+        "regras_disparadas": 2,
+        "fatos_processados": 5
+      },
+      "consultas": [
+        {
+          "consulta": "trocar_cabo",
+          "frente": false,
+          "tras": false,
+          "prova": null,
+          "metricas": {
+            "chamadas": 3,
+            "regras_tentadas": 2
+          }
+        },
+        {
+          "consulta": "acionar_dhcp",
+          "frente": false,
+          "tras": false,
+          "prova": null,
+          "metricas": {
+            "chamadas": 3,
+            "regras_tentadas": 2
+          }
+        },
+        {
+          "consulta": "revisar_dns",
+          "frente": true,
+          "tras": true,
+          "prova": {
+            "regra": "R06",
+            "conclusao": "revisar_dns",
+            "premissas": [
+              {
+                "regra": "R05",
+                "conclusao": "falha_dns",
+                "premissas": [
+                  {
+                    "fato": "ip_valido"
+                  },
+                  {
+                    "fato": "gateway_responde"
+                  },
+                  {
+                    "fato": "dns_falha"
+                  }
+                ]
+              }
+            ]
+          },
+          "metricas": {
+            "chamadas": 5,
+            "regras_tentadas": 2
+          }
+        },
+        {
+          "consulta": "acionar_rede",
+          "frente": false,
+          "tras": false,
+          "prova": null,
+          "metricas": {
+            "chamadas": 4,
+            "regras_tentadas": 2
+          }
+        },
+        {
+          "consulta": "acionar_servico",
+          "frente": false,
+          "tras": false,
+          "prova": null,
+          "metricas": {
+            "chamadas": 5,
+            "regras_tentadas": 2
+          }
+        },
+        {
+          "consulta": "recoletar_evidencias",
+          "frente": false,
+          "tras": false,
+          "prova": null,
+          "metricas": {
+            "chamadas": 6,
+            "regras_tentadas": 4
+          }
+        },
+        {
+          "consulta": "rede_operacional",
+          "frente": false,
+          "tras": false,
+          "prova": null,
+          "metricas": {
+            "chamadas": 4,
+            "regras_tentadas": 1
+          }
+        },
+        {
+          "consulta": "inspecionar_switch",
+          "frente": false,
+          "tras": false,
+          "prova": null,
+          "metricas": {
+            "chamadas": 3,
+            "regras_tentadas": 2
+          }
+        }
+      ],
+      "provas_frente": {
+        "dns_falha": {
+          "fato": "dns_falha"
+        },
+        "gateway_responde": {
+          "fato": "gateway_responde"
+        },
+        "ip_valido": {
+          "fato": "ip_valido"
+        },
+        "falha_dns": {
+          "regra": "R05",
+          "conclusao": "falha_dns",
+          "premissas": [
+            {
+              "fato": "ip_valido"
+            },
+            {
+              "fato": "gateway_responde"
+            },
+            {
+              "fato": "dns_falha"
+            }
+          ]
+        },
+        "revisar_dns": {
+          "regra": "R06",
+          "conclusao": "revisar_dns",
+          "premissas": [
+            {
+              "regra": "R05",
+              "conclusao": "falha_dns",
+              "premissas": [
+                {
+                  "fato": "ip_valido"
+                },
+                {
+                  "fato": "gateway_responde"
+                },
+                {
+                  "fato": "dns_falha"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cenario": "gateway",
+      "fatos": [
+        "gateway_falha",
+        "ip_valido",
+        "outros_afetados"
+      ],
+      "derivados": [
+        "acionar_rede",
+        "falha_gateway"
+      ],
+      "metricas_frente": {
+        "regras_disparadas": 2,
+        "fatos_processados": 5
+      },
+      "consultas": [
+        {
+          "consulta": "trocar_cabo",
+          "frente": false,
+          "tras": false,
+          "prova": null,
+          "metricas": {
+            "chamadas": 3,
+            "regras_tentadas": 2
+          }
+        },
+        {
+          "consulta": "acionar_dhcp",
+          "frente": false,
+          "tras": false,
+          "prova": null,
+          "metricas": {
+            "chamadas": 3,
+            "regras_tentadas": 2
+          }
+        },
+        {
+          "consulta": "revisar_dns",
+          "frente": false,
+          "tras": false,
+          "prova": null,
+          "metricas": {
+            "chamadas": 4,
+            "regras_tentadas": 2
+          }
+        },
+        {
+          "consulta": "acionar_rede",
+          "frente": true,
+          "tras": true,
+          "prova": {
+            "regra": "R08",
+            "conclusao": "acionar_rede",
+            "premissas": [
+              {
+                "regra": "R07",
+                "conclusao": "falha_gateway",
+                "premissas": [
+                  {
+                    "fato": "ip_valido"
+                  },
+                  {
+                    "fato": "gateway_falha"
+                  },
+                  {
+                    "fato": "outros_afetados"
+                  }
+                ]
+              }
+            ]
+          },
+          "metricas": {
+            "chamadas": 5,
+            "regras_tentadas": 2
+          }
+        },
+        {
+          "consulta": "acionar_servico",
+          "frente": false,
+          "tras": false,
+          "prova": null,
+          "metricas": {
+            "chamadas": 4,
+            "regras_tentadas": 2
+          }
+        },
+        {
+          "consulta": "recoletar_evidencias",
+          "frente": false,
+          "tras": false,
+          "prova": null,
+          "metricas": {
+            "chamadas": 5,
+            "regras_tentadas": 4
+          }
+        },
+        {
+          "consulta": "rede_operacional",
+          "frente": false,
+          "tras": false,
+          "prova": null,
+          "metricas": {
+            "chamadas": 3,
+            "regras_tentadas": 1
+          }
+        },
+        {
+          "consulta": "inspecionar_switch",
+          "frente": false,
+          "tras": false,
+          "prova": null,
+          "metricas": {
+            "chamadas": 3,
+            "regras_tentadas": 2
+          }
+        }
+      ],
+      "provas_frente": {
+        "outros_afetados": {
+          "fato": "outros_afetados"
+        },
+        "ip_valido": {
+          "fato": "ip_valido"
+        },
+        "gateway_falha": {
+          "fato": "gateway_falha"
+        },
+        "falha_gateway": {
+          "regra": "R07",
+          "conclusao": "falha_gateway",
+          "premissas": [
+            {
+              "fato": "ip_valido"
+            },
+            {
+              "fato": "gateway_falha"
+            },
+            {
+              "fato": "outros_afetados"
+            }
+          ]
+        },
+        "acionar_rede": {
+          "regra": "R08",
+          "conclusao": "acionar_rede",
+          "premissas": [
+            {
+              "regra": "R07",
+              "conclusao": "falha_gateway",
+              "premissas": [
+                {
+                  "fato": "ip_valido"
+                },
+                {
+                  "fato": "gateway_falha"
+                },
+                {
+                  "fato": "outros_afetados"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cenario": "servico",
+      "fatos": [
+        "dns_responde",
+        "gateway_responde",
+        "ip_valido",
+        "servico_falha"
+      ],
+      "derivados": [
+        "acionar_servico",
+        "falha_servico"
+      ],
+      "metricas_frente": {
+        "regras_disparadas": 2,
+        "fatos_processados": 6
+      },
+      "consultas": [
+        {
+          "consulta": "trocar_cabo",
+          "frente": false,
+          "tras": false,
+          "prova": null,
+          "metricas": {
+            "chamadas": 3,
+            "regras_tentadas": 2
+          }
+        },
+        {
+          "consulta": "acionar_dhcp",
+          "frente": false,
+          "tras": false,
+          "prova": null,
+          "metricas": {
+            "chamadas": 3,
+            "regras_tentadas": 2
+          }
+        },
+        {
+          "consulta": "revisar_dns",
+          "frente": false,
+          "tras": false,
+          "prova": null,
+          "metricas": {
+            "chamadas": 5,
+            "regras_tentadas": 2
+          }
+        },
+        {
+          "consulta": "acionar_rede",
+          "frente": false,
+          "tras": false,
+          "prova": null,
+          "metricas": {
+            "chamadas": 4,
+            "regras_tentadas": 2
+          }
+        },
+        {
+          "consulta": "acionar_servico",
+          "frente": true,
+          "tras": true,
+          "prova": {
+            "regra": "R10",
+            "conclusao": "acionar_servico",
+            "premissas": [
+              {
+                "regra": "R09",
+                "conclusao": "falha_servico",
+                "premissas": [
+                  {
+                    "fato": "ip_valido"
+                  },
+                  {
+                    "fato": "gateway_responde"
+                  },
+                  {
+                    "fato": "dns_responde"
+                  },
+                  {
+                    "fato": "servico_falha"
+                  }
+                ]
+              }
+            ]
+          },
+          "metricas": {
+            "chamadas": 6,
+            "regras_tentadas": 2
+          }
+        },
+        {
+          "consulta": "recoletar_evidencias",
+          "frente": false,
+          "tras": false,
+          "prova": null,
+          "metricas": {
+            "chamadas": 7,
+            "regras_tentadas": 4
+          }
+        },
+        {
+          "consulta": "rede_operacional",
+          "frente": false,
+          "tras": false,
+          "prova": null,
+          "metricas": {
+            "chamadas": 5,
+            "regras_tentadas": 1
+          }
+        },
+        {
+          "consulta": "inspecionar_switch",
+          "frente": false,
+          "tras": false,
+          "prova": null,
+          "metricas": {
+            "chamadas": 3,
+            "regras_tentadas": 2
+          }
+        }
+      ],
+      "provas_frente": {
+        "dns_responde": {
+          "fato": "dns_responde"
+        },
+        "ip_valido": {
+          "fato": "ip_valido"
+        },
+        "gateway_responde": {
+          "fato": "gateway_responde"
+        },
+        "servico_falha": {
+          "fato": "servico_falha"
+        },
+        "falha_servico": {
+          "regra": "R09",
+          "conclusao": "falha_servico",
+          "premissas": [
+            {
+              "fato": "ip_valido"
+            },
+            {
+              "fato": "gateway_responde"
+            },
+            {
+              "fato": "dns_responde"
+            },
+            {
+              "fato": "servico_falha"
+            }
+          ]
+        },
+        "acionar_servico": {
+          "regra": "R10",
+          "conclusao": "acionar_servico",
+          "premissas": [
+            {
+              "regra": "R09",
+              "conclusao": "falha_servico",
+              "premissas": [
+                {
+                  "fato": "ip_valido"
+                },
+                {
+                  "fato": "gateway_responde"
+                },
+                {
+                  "fato": "dns_responde"
+                },
+                {
+                  "fato": "servico_falha"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cenario": "normal",
+      "fatos": [
+        "dns_responde",
+        "gateway_responde",
+        "ip_valido",
+        "servico_responde"
+      ],
+      "derivados": [
+        "rede_operacional"
+      ],
+      "metricas_frente": {
+        "regras_disparadas": 1,
+        "fatos_processados": 5
+      },
+      "consultas": [
+        {
+          "consulta": "trocar_cabo",
+          "frente": false,
+          "tras": false,
+          "prova": null,
+          "metricas": {
+            "chamadas": 3,
+            "regras_tentadas": 2
+          }
+        },
+        {
+          "consulta": "acionar_dhcp",
+          "frente": false,
+          "tras": false,
+          "prova": null,
+          "metricas": {
+            "chamadas": 3,
+            "regras_tentadas": 2
+          }
+        },
+        {
+          "consulta": "revisar_dns",
+          "frente": false,
+          "tras": false,
+          "prova": null,
+          "metricas": {
+            "chamadas": 5,
+            "regras_tentadas": 2
+          }
+        },
+        {
+          "consulta": "acionar_rede",
+          "frente": false,
+          "tras": false,
+          "prova": null,
+          "metricas": {
+            "chamadas": 4,
+            "regras_tentadas": 2
+          }
+        },
+        {
+          "consulta": "acionar_servico",
+          "frente": false,
+          "tras": false,
+          "prova": null,
+          "metricas": {
+            "chamadas": 6,
+            "regras_tentadas": 2
+          }
+        },
+        {
+          "consulta": "recoletar_evidencias",
+          "frente": false,
+          "tras": false,
+          "prova": null,
+          "metricas": {
+            "chamadas": 7,
+            "regras_tentadas": 4
+          }
+        },
+        {
+          "consulta": "rede_operacional",
+          "frente": true,
+          "tras": true,
+          "prova": {
+            "regra": "R15",
+            "conclusao": "rede_operacional",
+            "premissas": [
+              {
+                "fato": "ip_valido"
+              },
+              {
+                "fato": "gateway_responde"
+              },
+              {
+                "fato": "dns_responde"
+              },
+              {
+                "fato": "servico_responde"
+              }
+            ]
+          },
+          "metricas": {
+            "chamadas": 5,
+            "regras_tentadas": 1
+          }
+        },
+        {
+          "consulta": "inspecionar_switch",
+          "frente": false,
+          "tras": false,
+          "prova": null,
+          "metricas": {
+            "chamadas": 3,
+            "regras_tentadas": 2
+          }
+        }
+      ],
+      "provas_frente": {
+        "dns_responde": {
+          "fato": "dns_responde"
+        },
+        "servico_responde": {
+          "fato": "servico_responde"
+        },
+        "gateway_responde": {
+          "fato": "gateway_responde"
+        },
+        "ip_valido": {
+          "fato": "ip_valido"
+        },
+        "rede_operacional": {
+          "regra": "R15",
+          "conclusao": "rede_operacional",
+          "premissas": [
+            {
+              "fato": "ip_valido"
+            },
+            {
+              "fato": "gateway_responde"
+            },
+            {
+              "fato": "dns_responde"
+            },
+            {
+              "fato": "servico_responde"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cenario": "incompleto",
+      "fatos": [
+        "link_ativo"
+      ],
+      "derivados": [],
+      "metricas_frente": {
+        "regras_disparadas": 0,
+        "fatos_processados": 1
+      },
+      "consultas": [
+        {
+          "consulta": "trocar_cabo",
+          "frente": false,
+          "tras": false,
+          "prova": null,
+          "metricas": {
+            "chamadas": 3,
+            "regras_tentadas": 2
+          }
+        },
+        {
+          "consulta": "acionar_dhcp",
+          "frente": false,
+          "tras": false,
+          "prova": null,
+          "metricas": {
+            "chamadas": 4,
+            "regras_tentadas": 2
+          }
+        },
+        {
+          "consulta": "revisar_dns",
+          "frente": false,
+          "tras": false,
+          "prova": null,
+          "metricas": {
+            "chamadas": 3,
+            "regras_tentadas": 2
+          }
+        },
+        {
+          "consulta": "acionar_rede",
+          "frente": false,
+          "tras": false,
+          "prova": null,
+          "metricas": {
+            "chamadas": 3,
+            "regras_tentadas": 2
+          }
+        },
+        {
+          "consulta": "acionar_servico",
+          "frente": false,
+          "tras": false,
+          "prova": null,
+          "metricas": {
+            "chamadas": 3,
+            "regras_tentadas": 2
+          }
+        },
+        {
+          "consulta": "recoletar_evidencias",
+          "frente": false,
+          "tras": false,
+          "prova": null,
+          "metricas": {
+            "chamadas": 6,
+            "regras_tentadas": 4
+          }
+        },
+        {
+          "consulta": "rede_operacional",
+          "frente": false,
+          "tras": false,
+          "prova": null,
+          "metricas": {
+            "chamadas": 2,
+            "regras_tentadas": 1
+          }
+        },
+        {
+          "consulta": "inspecionar_switch",
+          "frente": false,
+          "tras": false,
+          "prova": null,
+          "metricas": {
+            "chamadas": 3,
+            "regras_tentadas": 2
+          }
+        }
+      ],
+      "provas_frente": {
+        "link_ativo": {
+          "fato": "link_ativo"
+        }
+      }
+    },
+    {
+      "cenario": "conflitante",
+      "fatos": [
+        "dns_falha",
+        "dns_responde",
+        "gateway_responde",
+        "ip_valido"
+      ],
+      "derivados": [
+        "evidencia_inconsistente",
+        "falha_dns",
+        "recoletar_evidencias",
+        "revisar_dns"
+      ],
+      "metricas_frente": {
+        "regras_disparadas": 4,
+        "fatos_processados": 8
+      },
+      "consultas": [
+        {
+          "consulta": "trocar_cabo",
+          "frente": false,
+          "tras": false,
+          "prova": null,
+          "metricas": {
+            "chamadas": 3,
+            "regras_tentadas": 2
+          }
+        },
+        {
+          "consulta": "acionar_dhcp",
+          "frente": false,
+          "tras": false,
+          "prova": null,
+          "metricas": {
+            "chamadas": 3,
+            "regras_tentadas": 2
+          }
+        },
+        {
+          "consulta": "revisar_dns",
+          "frente": true,
+          "tras": true,
+          "prova": {
+            "regra": "R06",
+            "conclusao": "revisar_dns",
+            "premissas": [
+              {
+                "regra": "R05",
+                "conclusao": "falha_dns",
+                "premissas": [
+                  {
+                    "fato": "ip_valido"
+                  },
+                  {
+                    "fato": "gateway_responde"
+                  },
+                  {
+                    "fato": "dns_falha"
+                  }
+                ]
+              }
+            ]
+          },
+          "metricas": {
+            "chamadas": 5,
+            "regras_tentadas": 2
+          }
+        },
+        {
+          "consulta": "acionar_rede",
+          "frente": false,
+          "tras": false,
+          "prova": null,
+          "metricas": {
+            "chamadas": 4,
+            "regras_tentadas": 2
+          }
+        },
+        {
+          "consulta": "acionar_servico",
+          "frente": false,
+          "tras": false,
+          "prova": null,
+          "metricas": {
+            "chamadas": 6,
+            "regras_tentadas": 2
+          }
+        },
+        {
+          "consulta": "recoletar_evidencias",
+          "frente": true,
+          "tras": true,
+          "prova": {
+            "regra": "R14",
+            "conclusao": "recoletar_evidencias",
+            "premissas": [
+              {
+                "regra": "R12",
+                "conclusao": "evidencia_inconsistente",
+                "premissas": [
+                  {
+                    "fato": "dns_responde"
+                  },
+                  {
+                    "fato": "dns_falha"
+                  }
+                ]
+              }
+            ]
+          },
+          "metricas": {
+            "chamadas": 6,
+            "regras_tentadas": 3
+          }
+        },
+        {
+          "consulta": "rede_operacional",
+          "frente": false,
+          "tras": false,
+          "prova": null,
+          "metricas": {
+            "chamadas": 5,
+            "regras_tentadas": 1
+          }
+        },
+        {
+          "consulta": "inspecionar_switch",
+          "frente": false,
+          "tras": false,
+          "prova": null,
+          "metricas": {
+            "chamadas": 3,
+            "regras_tentadas": 2
+          }
+        }
+      ],
+      "provas_frente": {
+        "dns_responde": {
+          "fato": "dns_responde"
+        },
+        "dns_falha": {
+          "fato": "dns_falha"
+        },
+        "gateway_responde": {
+          "fato": "gateway_responde"
+        },
+        "ip_valido": {
+          "fato": "ip_valido"
+        },
+        "evidencia_inconsistente": {
+          "regra": "R12",
+          "conclusao": "evidencia_inconsistente",
+          "premissas": [
+            {
+              "fato": "dns_responde"
+            },
+            {
+              "fato": "dns_falha"
+            }
+          ]
+        },
+        "falha_dns": {
+          "regra": "R05",
+          "conclusao": "falha_dns",
+          "premissas": [
+            {
+              "fato": "ip_valido"
+            },
+            {
+              "fato": "gateway_responde"
+            },
+            {
+              "fato": "dns_falha"
+            }
+          ]
+        },
+        "recoletar_evidencias": {
+          "regra": "R14",
+          "conclusao": "recoletar_evidencias",
+          "premissas": [
+            {
+              "regra": "R12",
+              "conclusao": "evidencia_inconsistente",
+              "premissas": [
+                {
+                  "fato": "dns_responde"
+                },
+                {
+                  "fato": "dns_falha"
+                }
+              ]
+            }
+          ]
+        },
+        "revisar_dns": {
+          "regra": "R06",
+          "conclusao": "revisar_dns",
+          "premissas": [
+            {
+              "regra": "R05",
+              "conclusao": "falha_dns",
+              "premissas": [
+                {
+                  "fato": "ip_valido"
+                },
+                {
+                  "fato": "gateway_responde"
+                },
+                {
+                  "fato": "dns_falha"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cenario": "coletivo",
+      "fatos": [
+        "cabo_danificado",
+        "outros_afetados",
+        "sem_link"
+      ],
+      "derivados": [
+        "falha_fisica",
+        "inspecionar_switch",
+        "trocar_cabo"
+      ],
+      "metricas_frente": {
+        "regras_disparadas": 3,
+        "fatos_processados": 6
+      },
+      "consultas": [
+        {
+          "consulta": "trocar_cabo",
+          "frente": true,
+          "tras": true,
+          "prova": {
+            "regra": "R02",
+            "conclusao": "trocar_cabo",
+            "premissas": [
+              {
+                "regra": "R01",
+                "conclusao": "falha_fisica",
+                "premissas": [
+                  {
+                    "fato": "sem_link"
+                  },
+                  {
+                    "fato": "cabo_danificado"
+                  }
+                ]
+              }
+            ]
+          },
+          "metricas": {
+            "chamadas": 4,
+            "regras_tentadas": 2
+          }
+        },
+        {
+          "consulta": "acionar_dhcp",
+          "frente": false,
+          "tras": false,
+          "prova": null,
+          "metricas": {
+            "chamadas": 3,
+            "regras_tentadas": 2
+          }
+        },
+        {
+          "consulta": "revisar_dns",
+          "frente": false,
+          "tras": false,
+          "prova": null,
+          "metricas": {
+            "chamadas": 3,
+            "regras_tentadas": 2
+          }
+        },
+        {
+          "consulta": "acionar_rede",
+          "frente": false,
+          "tras": false,
+          "prova": null,
+          "metricas": {
+            "chamadas": 3,
+            "regras_tentadas": 2
+          }
+        },
+        {
+          "consulta": "acionar_servico",
+          "frente": false,
+          "tras": false,
+          "prova": null,
+          "metricas": {
+            "chamadas": 3,
+            "regras_tentadas": 2
+          }
+        },
+        {
+          "consulta": "recoletar_evidencias",
+          "frente": false,
+          "tras": false,
+          "prova": null,
+          "metricas": {
+            "chamadas": 5,
+            "regras_tentadas": 4
+          }
+        },
+        {
+          "consulta": "rede_operacional",
+          "frente": false,
+          "tras": false,
+          "prova": null,
+          "metricas": {
+            "chamadas": 2,
+            "regras_tentadas": 1
+          }
+        },
+        {
+          "consulta": "inspecionar_switch",
+          "frente": true,
+          "tras": true,
+          "prova": {
+            "regra": "R16",
+            "conclusao": "inspecionar_switch",
+            "premissas": [
+              {
+                "regra": "R01",
+                "conclusao": "falha_fisica",
+                "premissas": [
+                  {
+                    "fato": "sem_link"
+                  },
+                  {
+                    "fato": "cabo_danificado"
+                  }
+                ]
+              },
+              {
+                "fato": "outros_afetados"
+              }
+            ]
+          },
+          "metricas": {
+            "chamadas": 5,
+            "regras_tentadas": 2
+          }
+        }
+      ],
+      "provas_frente": {
+        "cabo_danificado": {
+          "fato": "cabo_danificado"
+        },
+        "outros_afetados": {
+          "fato": "outros_afetados"
+        },
+        "sem_link": {
+          "fato": "sem_link"
+        },
+        "falha_fisica": {
+          "regra": "R01",
+          "conclusao": "falha_fisica",
+          "premissas": [
+            {
+              "fato": "sem_link"
+            },
+            {
+              "fato": "cabo_danificado"
+            }
+          ]
+        },
+        "trocar_cabo": {
+          "regra": "R02",
+          "conclusao": "trocar_cabo",
+          "premissas": [
+            {
+              "regra": "R01",
+              "conclusao": "falha_fisica",
+              "premissas": [
+                {
+                  "fato": "sem_link"
+                },
+                {
+                  "fato": "cabo_danificado"
+                }
+              ]
+            }
+          ]
+        },
+        "inspecionar_switch": {
+          "regra": "R16",
+          "conclusao": "inspecionar_switch",
+          "premissas": [
+            {
+              "regra": "R01",
+              "conclusao": "falha_fisica",
+              "premissas": [
+                {
+                  "fato": "sem_link"
+                },
+                {
+                  "fato": "cabo_danificado"
+                }
+              ]
+            },
+            {
+              "fato": "outros_afetados"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
