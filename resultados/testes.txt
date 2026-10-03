@@ -1,0 +1,26 @@
+test_contraexemplo_ao_otimismo (test_projetos.BuscaComplexaTest.test_contraexemplo_ao_otimismo) ... ok
+test_garantia_exaustiva_e_valor_pior_caso (test_projetos.BuscaComplexaTest.test_garantia_exaustiva_e_valor_pior_caso) ... ok
+test_mais_bateria_nao_piora_valor (test_projetos.BuscaComplexaTest.test_mais_bateria_nao_piora_valor) ... ok
+test_inacessivel (test_projetos.BuscaInformadaTest.test_inacessivel) ... ok
+test_objetivo_inicial (test_projetos.BuscaInformadaTest.test_objetivo_inicial) ... ok
+test_otimalidade_e_caminhos_em_mapas_diferentes (test_projetos.BuscaInformadaTest.test_otimalidade_e_caminhos_em_mapas_diferentes) ... ok
+test_labirintos_sao_arvores_e_rotas_concordam (test_projetos.BuscaNaoInformadaTest.test_labirintos_sao_arvores_e_rotas_concordam) ... ok
+test_otimalidade_bfs_iddfs_e_ordem_dfs (test_projetos.BuscaNaoInformadaTest.test_otimalidade_bfs_iddfs_e_ordem_dfs) ... ok
+test_sem_solucao_e_objetivo_inicial (test_projetos.BuscaNaoInformadaTest.test_sem_solucao_e_objetivo_inicial) ... ok
+test_unitario_contra_oraculo (test_projetos.BuscaNaoInformadaTest.test_unitario_contra_oraculo) ... ok
+test_busca_contra_enumeracao (test_projetos.CSPTest.test_busca_contra_enumeracao) ... ok
+test_dominio_vazio (test_projetos.CSPTest.test_dominio_vazio) ... ok
+test_solucoes_validadas (test_projetos.CSPTest.test_solucoes_validadas) ... ok
+test_ausencia_nao_e_negacao (test_projetos.ConhecimentoTest.test_ausencia_nao_e_negacao) ... ok
+test_ciclos_regras_vazias_e_alternativas (test_projetos.ConhecimentoTest.test_ciclos_regras_vazias_e_alternativas) ... ok
+test_concordancia_dos_motores (test_projetos.ConhecimentoTest.test_concordancia_dos_motores) ... ok
+test_fecho_contra_oraculo_em_bases_aleatorias (test_projetos.ConhecimentoTest.test_fecho_contra_oraculo_em_bases_aleatorias) ... ok
+test_provas_validas (test_projetos.ConhecimentoTest.test_provas_validas) ... ok
+test_programacao_dinamica_contra_forca_bruta (test_projetos.GeneticoTest.test_programacao_dinamica_contra_forca_bruta) ... ok
+test_reparo_populacao_e_elitismo (test_projetos.GeneticoTest.test_reparo_populacao_e_elitismo) ... ok
+test_semente_reproduzivel (test_projetos.GeneticoTest.test_semente_reproduzivel) ... ok
+
+----------------------------------------------------------------------
+Ran 21 tests in 0.230s
+
+OK
