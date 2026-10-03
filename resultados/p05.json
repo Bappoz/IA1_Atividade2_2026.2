@@ -1,0 +1,512 @@
+{
+  "disciplinas": [
+    {
+      "nome": "IA",
+      "docente": "Lia",
+      "grupos": [
+        "A"
+      ],
+      "alunos": 32,
+      "computadores": true,
+      "horarios": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "nome": "Redes",
+      "docente": "Beto",
+      "grupos": [
+        "A"
+      ],
+      "alunos": 32,
+      "computadores": true,
+      "horarios": [
+        0,
+        1,
+        3
+      ]
+    },
+    {
+      "nome": "BD",
+      "docente": "Lia",
+      "grupos": [
+        "B"
+      ],
+      "alunos": 22,
+      "computadores": true,
+      "horarios": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "nome": "Compiladores",
+      "docente": "Nina",
+      "grupos": [
+        "B"
+      ],
+      "alunos": 22,
+      "computadores": true,
+      "horarios": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "nome": "Grafos",
+      "docente": "Beto",
+      "grupos": [
+        "B"
+      ],
+      "alunos": 22,
+      "computadores": false,
+      "horarios": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "nome": "Calculo",
+      "docente": "Ivo",
+      "grupos": [
+        "A",
+        "C"
+      ],
+      "alunos": 54,
+      "computadores": false,
+      "horarios": [
+        0,
+        2,
+        4
+      ]
+    },
+    {
+      "nome": "IHC",
+      "docente": "Nina",
+      "grupos": [
+        "A"
+      ],
+      "alunos": 32,
+      "computadores": false,
+      "horarios": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "nome": "Fisica",
+      "docente": "Ivo",
+      "grupos": [
+        "B"
+      ],
+      "alunos": 22,
+      "computadores": false,
+      "horarios": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "nome": "Embarcados",
+      "docente": "Lia",
+      "grupos": [
+        "C"
+      ],
+      "alunos": 20,
+      "computadores": true,
+      "horarios": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "nome": "Eletronica",
+      "docente": "Beto",
+      "grupos": [
+        "C"
+      ],
+      "alunos": 20,
+      "computadores": true,
+      "horarios": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "nome": "Projeto",
+      "docente": "Nina",
+      "grupos": [
+        "C"
+      ],
+      "alunos": 20,
+      "computadores": false,
+      "horarios": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "nome": "Estatistica",
+      "docente": "Ivo",
+      "grupos": [
+        "C"
+      ],
+      "alunos": 20,
+      "computadores": false,
+      "horarios": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  ],
+  "salas": {
+    "Lab40": [
+      40,
+      true
+    ],
+    "Lab24": [
+      24,
+      true
+    ],
+    "Aud60": [
+      60,
+      false
+    ]
+  },
+  "horarios": [
+    "Seg 08h",
+    "Seg 10h",
+    "Ter 08h",
+    "Ter 10h",
+    "Qua 08h"
+  ],
+  "inviavel": [
+    {
+      "nome": "Extra0",
+      "docente": "Unico",
+      "grupos": [
+        "0"
+      ],
+      "alunos": 32,
+      "computadores": true,
+      "horarios": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "nome": "Extra1",
+      "docente": "Unico",
+      "grupos": [
+        "1"
+      ],
+      "alunos": 32,
+      "computadores": true,
+      "horarios": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "nome": "Extra2",
+      "docente": "Unico",
+      "grupos": [
+        "2"
+      ],
+      "alunos": 32,
+      "computadores": true,
+      "horarios": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "nome": "Extra3",
+      "docente": "Unico",
+      "grupos": [
+        "3"
+      ],
+      "alunos": 32,
+      "computadores": true,
+      "horarios": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "nome": "Extra4",
+      "docente": "Unico",
+      "grupos": [
+        "4"
+      ],
+      "alunos": 32,
+      "computadores": true,
+      "horarios": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "nome": "Extra5",
+      "docente": "Unico",
+      "grupos": [
+        "5"
+      ],
+      "alunos": 32,
+      "computadores": true,
+      "horarios": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  ],
+  "execucoes": [
+    {
+      "metodo": "backtracking",
+      "solucao": {
+        "IA": [
+          0,
+          "Lab40"
+        ],
+        "Redes": [
+          1,
+          "Lab40"
+        ],
+        "BD": [
+          1,
+          "Lab24"
+        ],
+        "Compiladores": [
+          0,
+          "Lab24"
+        ],
+        "Grafos": [
+          2,
+          "Lab40"
+        ],
+        "Calculo": [
+          2,
+          "Aud60"
+        ],
+        "IHC": [
+          3,
+          "Lab40"
+        ],
+        "Fisica": [
+          3,
+          "Aud60"
+        ],
+        "Embarcados": [
+          3,
+          "Lab24"
+        ],
+        "Eletronica": [
+          4,
+          "Lab40"
+        ],
+        "Projeto": [
+          1,
+          "Aud60"
+        ],
+        "Estatistica": [
+          0,
+          "Aud60"
+        ]
+      },
+      "metricas": {
+        "nos": 16,
+        "tentativas": 91,
+        "backtracks": 3,
+        "revisoes": 0,
+        "removidos": 0,
+        "verificacoes": 381,
+        "tempo_ms": 0.36675699993793387
+      },
+      "dominios_iniciais": {
+        "IA": 3,
+        "Redes": 3,
+        "BD": 6,
+        "Compiladores": 10,
+        "Grafos": 15,
+        "Calculo": 3,
+        "IHC": 10,
+        "Fisica": 15,
+        "Embarcados": 10,
+        "Eletronica": 10,
+        "Projeto": 15,
+        "Estatistica": 15
+      },
+      "cenario": "normal",
+      "validada": true
+    },
+    {
+      "metodo": "MRV+LCV+MAC",
+      "solucao": {
+        "IA": [
+          0,
+          "Lab40"
+        ],
+        "Redes": [
+          1,
+          "Lab40"
+        ],
+        "Calculo": [
+          2,
+          "Aud60"
+        ],
+        "IHC": [
+          3,
+          "Aud60"
+        ],
+        "BD": [
+          2,
+          "Lab24"
+        ],
+        "Compiladores": [
+          1,
+          "Lab24"
+        ],
+        "Embarcados": [
+          3,
+          "Lab24"
+        ],
+        "Eletronica": [
+          0,
+          "Lab24"
+        ],
+        "Estatistica": [
+          1,
+          "Aud60"
+        ],
+        "Projeto": [
+          4,
+          "Aud60"
+        ],
+        "Grafos": [
+          3,
+          "Lab40"
+        ],
+        "Fisica": [
+          0,
+          "Aud60"
+        ]
+      },
+      "metricas": {
+        "nos": 13,
+        "tentativas": 12,
+        "backtracks": 0,
+        "revisoes": 739,
+        "removidos": 78,
+        "verificacoes": 6962,
+        "tempo_ms": 6.5420399996583
+      },
+      "dominios_iniciais": {
+        "IA": 3,
+        "Redes": 3,
+        "BD": 6,
+        "Compiladores": 10,
+        "Grafos": 15,
+        "Calculo": 3,
+        "IHC": 10,
+        "Fisica": 15,
+        "Embarcados": 10,
+        "Eletronica": 10,
+        "Projeto": 15,
+        "Estatistica": 15
+      },
+      "cenario": "normal",
+      "validada": true
+    },
+    {
+      "metodo": "backtracking",
+      "solucao": null,
+      "metricas": {
+        "nos": 326,
+        "tentativas": 1630,
+        "backtracks": 326,
+        "revisoes": 0,
+        "removidos": 0,
+        "verificacoes": 4405,
+        "tempo_ms": 3.5380769995754235
+      },
+      "dominios_iniciais": {
+        "Extra0": 5,
+        "Extra1": 5,
+        "Extra2": 5,
+        "Extra3": 5,
+        "Extra4": 5,
+        "Extra5": 5
+      },
+      "cenario": "inviavel",
+      "validada": null
+    },
+    {
+      "metodo": "MRV+LCV+MAC",
+      "solucao": null,
+      "metricas": {
+        "nos": 86,
+        "tentativas": 205,
+        "backtracks": 86,
+        "revisoes": 2675,
+        "removidos": 645,
+        "verificacoes": 7570,
+        "tempo_ms": 8.873512999343802
+      },
+      "dominios_iniciais": {
+        "Extra0": 5,
+        "Extra1": 5,
+        "Extra2": 5,
+        "Extra3": 5,
+        "Extra4": 5,
+        "Extra5": 5
+      },
+      "cenario": "inviavel",
+      "validada": null
+    }
+  ]
+}
