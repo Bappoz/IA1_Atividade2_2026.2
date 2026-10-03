@@ -1,0 +1,787 @@
+{
+  "modelo": {
+    "Portaria": [
+      {
+        "nome": "atalho",
+        "tempo": 2,
+        "resultados": [
+          [
+            "Atrio",
+            2
+          ],
+          [
+            "Desvio",
+            7
+          ]
+        ]
+      },
+      {
+        "nome": "via segura",
+        "tempo": 4,
+        "resultados": [
+          [
+            "Biblioteca",
+            2
+          ]
+        ]
+      }
+    ],
+    "Atrio": [
+      {
+        "nome": "ponte",
+        "tempo": 2,
+        "resultados": [
+          [
+            "Passarela",
+            2
+          ],
+          [
+            "Patio",
+            4
+          ]
+        ]
+      },
+      {
+        "nome": "rampa",
+        "tempo": 5,
+        "resultados": [
+          [
+            "Passarela",
+            1
+          ]
+        ]
+      }
+    ],
+    "Desvio": [
+      {
+        "nome": "escada",
+        "tempo": 3,
+        "resultados": [
+          [
+            "Patio",
+            2
+          ]
+        ]
+      }
+    ],
+    "Biblioteca": [
+      {
+        "nome": "elevador",
+        "tempo": 2,
+        "resultados": [
+          [
+            "Passarela",
+            2
+          ],
+          [
+            "Patio",
+            3
+          ]
+        ]
+      },
+      {
+        "nome": "contorno",
+        "tempo": 5,
+        "resultados": [
+          [
+            "Patio",
+            1
+          ]
+        ]
+      }
+    ],
+    "Passarela": [
+      {
+        "nome": "entrega",
+        "tempo": 3,
+        "resultados": [
+          [
+            "Laboratorio",
+            2
+          ]
+        ]
+      }
+    ],
+    "Patio": [
+      {
+        "nome": "normal",
+        "tempo": 4,
+        "resultados": [
+          [
+            "Laboratorio",
+            2
+          ]
+        ]
+      },
+      {
+        "nome": "expresso",
+        "tempo": 2,
+        "resultados": [
+          [
+            "Laboratorio",
+            4
+          ]
+        ]
+      }
+    ],
+    "Laboratorio": []
+  },
+  "execucoes": [
+    {
+      "bateria": 4,
+      "metodo": "AND-OR",
+      "valor": null,
+      "estados_avaliados": 12,
+      "garantia": false,
+      "desfechos": [
+        {
+          "sucesso": false,
+          "tempo": 0,
+          "trilha": [
+            [
+              "Portaria",
+              4
+            ]
+          ]
+        }
+      ],
+      "politica": []
+    },
+    {
+      "bateria": 4,
+      "metodo": "otimista",
+      "valor": null,
+      "estados_avaliados": 12,
+      "garantia": false,
+      "desfechos": [
+        {
+          "sucesso": false,
+          "tempo": 0,
+          "trilha": [
+            [
+              "Portaria",
+              4
+            ]
+          ]
+        }
+      ],
+      "politica": []
+    },
+    {
+      "bateria": 6,
+      "metodo": "AND-OR",
+      "valor": 13,
+      "estados_avaliados": 15,
+      "garantia": true,
+      "desfechos": [
+        {
+          "sucesso": true,
+          "tempo": 13,
+          "trilha": [
+            [
+              "Portaria",
+              6
+            ],
+            [
+              "Biblioteca",
+              4
+            ],
+            [
+              "Patio",
+              3
+            ],
+            [
+              "Laboratorio",
+              1
+            ]
+          ]
+        }
+      ],
+      "politica": [
+        {
+          "local": "Atrio",
+          "energia": 4,
+          "acao": "rampa"
+        },
+        {
+          "local": "Biblioteca",
+          "energia": 4,
+          "acao": "contorno"
+        },
+        {
+          "local": "Passarela",
+          "energia": 2,
+          "acao": "entrega"
+        },
+        {
+          "local": "Passarela",
+          "energia": 3,
+          "acao": "entrega"
+        },
+        {
+          "local": "Patio",
+          "energia": 3,
+          "acao": "normal"
+        },
+        {
+          "local": "Portaria",
+          "energia": 6,
+          "acao": "via segura"
+        }
+      ]
+    },
+    {
+      "bateria": 6,
+      "metodo": "otimista",
+      "valor": 7,
+      "estados_avaliados": 15,
+      "garantia": false,
+      "desfechos": [
+        {
+          "sucesso": true,
+          "tempo": 7,
+          "trilha": [
+            [
+              "Portaria",
+              6
+            ],
+            [
+              "Atrio",
+              4
+            ],
+            [
+              "Passarela",
+              2
+            ],
+            [
+              "Laboratorio",
+              0
+            ]
+          ]
+        },
+        {
+          "sucesso": false,
+          "tempo": 4,
+          "trilha": [
+            [
+              "Portaria",
+              6
+            ],
+            [
+              "Atrio",
+              4
+            ],
+            [
+              "Patio",
+              0
+            ]
+          ]
+        },
+        {
+          "sucesso": false,
+          "tempo": 2,
+          "trilha": [
+            [
+              "Portaria",
+              6
+            ],
+            [
+              "Desvio",
+              -1
+            ]
+          ]
+        }
+      ],
+      "politica": [
+        {
+          "local": "Atrio",
+          "energia": 4,
+          "acao": "ponte"
+        },
+        {
+          "local": "Biblioteca",
+          "energia": 4,
+          "acao": "elevador"
+        },
+        {
+          "local": "Passarela",
+          "energia": 2,
+          "acao": "entrega"
+        },
+        {
+          "local": "Passarela",
+          "energia": 3,
+          "acao": "entrega"
+        },
+        {
+          "local": "Patio",
+          "energia": 3,
+          "acao": "normal"
+        },
+        {
+          "local": "Portaria",
+          "energia": 6,
+          "acao": "atalho"
+        }
+      ]
+    },
+    {
+      "bateria": 8,
+      "metodo": "AND-OR",
+      "valor": 10,
+      "estados_avaliados": 16,
+      "garantia": true,
+      "desfechos": [
+        {
+          "sucesso": true,
+          "tempo": 9,
+          "trilha": [
+            [
+              "Portaria",
+              8
+            ],
+            [
+              "Biblioteca",
+              6
+            ],
+            [
+              "Passarela",
+              4
+            ],
+            [
+              "Laboratorio",
+              2
+            ]
+          ]
+        },
+        {
+          "sucesso": true,
+          "tempo": 10,
+          "trilha": [
+            [
+              "Portaria",
+              8
+            ],
+            [
+              "Biblioteca",
+              6
+            ],
+            [
+              "Patio",
+              3
+            ],
+            [
+              "Laboratorio",
+              1
+            ]
+          ]
+        }
+      ],
+      "politica": [
+        {
+          "local": "Atrio",
+          "energia": 6,
+          "acao": "ponte"
+        },
+        {
+          "local": "Biblioteca",
+          "energia": 6,
+          "acao": "elevador"
+        },
+        {
+          "local": "Passarela",
+          "energia": 4,
+          "acao": "entrega"
+        },
+        {
+          "local": "Passarela",
+          "energia": 5,
+          "acao": "entrega"
+        },
+        {
+          "local": "Patio",
+          "energia": 2,
+          "acao": "normal"
+        },
+        {
+          "local": "Patio",
+          "energia": 3,
+          "acao": "normal"
+        },
+        {
+          "local": "Patio",
+          "energia": 5,
+          "acao": "expresso"
+        },
+        {
+          "local": "Portaria",
+          "energia": 8,
+          "acao": "via segura"
+        }
+      ]
+    },
+    {
+      "bateria": 8,
+      "metodo": "otimista",
+      "valor": 7,
+      "estados_avaliados": 16,
+      "garantia": false,
+      "desfechos": [
+        {
+          "sucesso": true,
+          "tempo": 7,
+          "trilha": [
+            [
+              "Portaria",
+              8
+            ],
+            [
+              "Atrio",
+              6
+            ],
+            [
+              "Passarela",
+              4
+            ],
+            [
+              "Laboratorio",
+              2
+            ]
+          ]
+        },
+        {
+          "sucesso": true,
+          "tempo": 8,
+          "trilha": [
+            [
+              "Portaria",
+              8
+            ],
+            [
+              "Atrio",
+              6
+            ],
+            [
+              "Patio",
+              2
+            ],
+            [
+              "Laboratorio",
+              0
+            ]
+          ]
+        },
+        {
+          "sucesso": false,
+          "tempo": 2,
+          "trilha": [
+            [
+              "Portaria",
+              8
+            ],
+            [
+              "Desvio",
+              1
+            ]
+          ]
+        }
+      ],
+      "politica": [
+        {
+          "local": "Atrio",
+          "energia": 6,
+          "acao": "ponte"
+        },
+        {
+          "local": "Biblioteca",
+          "energia": 6,
+          "acao": "elevador"
+        },
+        {
+          "local": "Passarela",
+          "energia": 4,
+          "acao": "entrega"
+        },
+        {
+          "local": "Passarela",
+          "energia": 5,
+          "acao": "entrega"
+        },
+        {
+          "local": "Patio",
+          "energia": 2,
+          "acao": "normal"
+        },
+        {
+          "local": "Patio",
+          "energia": 3,
+          "acao": "normal"
+        },
+        {
+          "local": "Patio",
+          "energia": 5,
+          "acao": "expresso"
+        },
+        {
+          "local": "Portaria",
+          "energia": 8,
+          "acao": "atalho"
+        }
+      ]
+    },
+    {
+      "bateria": 11,
+      "metodo": "AND-OR",
+      "valor": 9,
+      "estados_avaliados": 18,
+      "garantia": true,
+      "desfechos": [
+        {
+          "sucesso": true,
+          "tempo": 7,
+          "trilha": [
+            [
+              "Portaria",
+              11
+            ],
+            [
+              "Atrio",
+              9
+            ],
+            [
+              "Passarela",
+              7
+            ],
+            [
+              "Laboratorio",
+              5
+            ]
+          ]
+        },
+        {
+          "sucesso": true,
+          "tempo": 6,
+          "trilha": [
+            [
+              "Portaria",
+              11
+            ],
+            [
+              "Atrio",
+              9
+            ],
+            [
+              "Patio",
+              5
+            ],
+            [
+              "Laboratorio",
+              1
+            ]
+          ]
+        },
+        {
+          "sucesso": true,
+          "tempo": 9,
+          "trilha": [
+            [
+              "Portaria",
+              11
+            ],
+            [
+              "Desvio",
+              4
+            ],
+            [
+              "Patio",
+              2
+            ],
+            [
+              "Laboratorio",
+              0
+            ]
+          ]
+        }
+      ],
+      "politica": [
+        {
+          "local": "Atrio",
+          "energia": 9,
+          "acao": "ponte"
+        },
+        {
+          "local": "Biblioteca",
+          "energia": 9,
+          "acao": "elevador"
+        },
+        {
+          "local": "Desvio",
+          "energia": 4,
+          "acao": "escada"
+        },
+        {
+          "local": "Passarela",
+          "energia": 7,
+          "acao": "entrega"
+        },
+        {
+          "local": "Passarela",
+          "energia": 8,
+          "acao": "entrega"
+        },
+        {
+          "local": "Patio",
+          "energia": 2,
+          "acao": "normal"
+        },
+        {
+          "local": "Patio",
+          "energia": 5,
+          "acao": "expresso"
+        },
+        {
+          "local": "Patio",
+          "energia": 6,
+          "acao": "expresso"
+        },
+        {
+          "local": "Patio",
+          "energia": 8,
+          "acao": "expresso"
+        },
+        {
+          "local": "Portaria",
+          "energia": 11,
+          "acao": "atalho"
+        }
+      ]
+    },
+    {
+      "bateria": 11,
+      "metodo": "otimista",
+      "valor": 6,
+      "estados_avaliados": 18,
+      "garantia": true,
+      "desfechos": [
+        {
+          "sucesso": true,
+          "tempo": 7,
+          "trilha": [
+            [
+              "Portaria",
+              11
+            ],
+            [
+              "Atrio",
+              9
+            ],
+            [
+              "Passarela",
+              7
+            ],
+            [
+              "Laboratorio",
+              5
+            ]
+          ]
+        },
+        {
+          "sucesso": true,
+          "tempo": 6,
+          "trilha": [
+            [
+              "Portaria",
+              11
+            ],
+            [
+              "Atrio",
+              9
+            ],
+            [
+              "Patio",
+              5
+            ],
+            [
+              "Laboratorio",
+              1
+            ]
+          ]
+        },
+        {
+          "sucesso": true,
+          "tempo": 9,
+          "trilha": [
+            [
+              "Portaria",
+              11
+            ],
+            [
+              "Desvio",
+              4
+            ],
+            [
+              "Patio",
+              2
+            ],
+            [
+              "Laboratorio",
+              0
+            ]
+          ]
+        }
+      ],
+      "politica": [
+        {
+          "local": "Atrio",
+          "energia": 9,
+          "acao": "ponte"
+        },
+        {
+          "local": "Biblioteca",
+          "energia": 9,
+          "acao": "elevador"
+        },
+        {
+          "local": "Desvio",
+          "energia": 4,
+          "acao": "escada"
+        },
+        {
+          "local": "Passarela",
+          "energia": 7,
+          "acao": "entrega"
+        },
+        {
+          "local": "Passarela",
+          "energia": 8,
+          "acao": "entrega"
+        },
+        {
+          "local": "Patio",
+          "energia": 2,
+          "acao": "normal"
+        },
+        {
+          "local": "Patio",
+          "energia": 5,
+          "acao": "expresso"
+        },
+        {
+          "local": "Patio",
+          "energia": 6,
+          "acao": "expresso"
+        },
+        {
+          "local": "Patio",
+          "energia": 8,
+          "acao": "expresso"
+        },
+        {
+          "local": "Portaria",
+          "energia": 11,
+          "acao": "atalho"
+        }
+      ]
+    }
+  ]
+}
