@@ -39,9 +39,9 @@ Na grade, E é proporcional a V. UCS e A* com esta heurística consistente têm 
 
 | Método | Custo médio | Expansões | Pico heap | Tempo (ms) | Ótimo |
 | --- | --- | --- | --- | --- | --- |
-| A* | 70,77 | 298,03 | 47,10 | 0,929 | 30/30 |
-| UCS | 70,77 | 348,07 | 28,90 | 0,948 | 30/30 |
-| Gulosa | 126,23 | 70,67 | 38,30 | 0,237 | 0/30 |
+| A* | 70,77 | 298,03 | 47,10 | 1,240 | 30/30 |
+| UCS | 70,77 | 348,07 | 28,90 | 1,250 | 30/30 |
+| Gulosa | 126,23 | 70,67 | 38,30 | 0,311 | 0/30 |
 
 A* e UCS concordaram no custo em 30 de 30 mapas. A* reduziu a média de expansões em 14,37%. A gulosa teve custo médio 78,38% maior que UCS e atingiu o ótimo em 0 mapas. O ganho em expansões não implica redução proporcional de tempo: heap, avaliação de h e variação de execução também interferem.
 

@@ -210,7 +210,7 @@
       "expandidos": 224,
       "gerados": 266,
       "pico_fronteira": 52,
-      "tempo_ms": 0.7771339996907045,
+      "tempo_ms": 1.2122279995310237,
       "semente": 0
     },
     {
@@ -389,7 +389,7 @@
       "expandidos": 335,
       "gerados": 345,
       "pico_fronteira": 33,
-      "tempo_ms": 0.9470389995840378,
+      "tempo_ms": 1.2834310000471305,
       "semente": 0
     },
     {
@@ -592,7 +592,7 @@
       "expandidos": 55,
       "gerados": 89,
       "pico_fronteira": 35,
-      "tempo_ms": 0.18892299976869253,
+      "tempo_ms": 0.2442759996483801,
       "semente": 0
     },
     {
@@ -771,7 +771,7 @@
       "expandidos": 351,
       "gerados": 372,
       "pico_fronteira": 42,
-      "tempo_ms": 1.0955690004266216,
+      "tempo_ms": 1.4527179992001038,
       "semente": 1
     },
     {
@@ -950,7 +950,7 @@
       "expandidos": 358,
       "gerados": 359,
       "pico_fronteira": 28,
-      "tempo_ms": 0.9701279996079393,
+      "tempo_ms": 1.2888370001746807,
       "semente": 1
     },
     {
@@ -1145,7 +1145,7 @@
       "expandidos": 112,
       "gerados": 157,
       "pico_fronteira": 41,
-      "tempo_ms": 0.36932399962097406,
+      "tempo_ms": 0.47473500035266625,
       "semente": 1
     },
     {
@@ -1332,7 +1332,7 @@
       "expandidos": 291,
       "gerados": 331,
       "pico_fronteira": 42,
-      "tempo_ms": 0.8903069992811652,
+      "tempo_ms": 1.2005059998045908,
       "semente": 2
     },
     {
@@ -1519,7 +1519,7 @@
       "expandidos": 351,
       "gerados": 351,
       "pico_fronteira": 25,
-      "tempo_ms": 0.9386219999214518,
+      "tempo_ms": 1.26025900044624,
       "semente": 2
     },
     {
@@ -1746,7 +1746,7 @@
       "expandidos": 76,
       "gerados": 116,
       "pico_fronteira": 37,
-      "tempo_ms": 0.25431500034756027,
+      "tempo_ms": 0.3349919998072437,
       "semente": 2
     },
     {
@@ -1941,7 +1941,7 @@
       "expandidos": 349,
       "gerados": 364,
       "pico_fronteira": 55,
-      "tempo_ms": 1.0526789992582053,
+      "tempo_ms": 1.3980579997223685,
       "semente": 3
     },
     {
@@ -2128,7 +2128,7 @@
       "expandidos": 349,
       "gerados": 350,
       "pico_fronteira": 36,
-      "tempo_ms": 0.9240679992217338,
+      "tempo_ms": 1.3125109999236884,
       "semente": 3
     },
     {
@@ -2355,7 +2355,7 @@
       "expandidos": 62,
       "gerados": 98,
       "pico_fronteira": 37,
-      "tempo_ms": 0.20231599955877755,
+      "tempo_ms": 0.3081519998886506,
       "semente": 3
     },
     {
@@ -2542,7 +2542,7 @@
       "expandidos": 292,
       "gerados": 333,
       "pico_fronteira": 31,
-      "tempo_ms": 0.8909400003176415,
+      "tempo_ms": 1.3582590008809348,
       "semente": 4
     },
     {
@@ -2721,7 +2721,7 @@
       "expandidos": 344,
       "gerados": 347,
       "pico_fronteira": 25,
-      "tempo_ms": 0.92543100072362,
+      "tempo_ms": 1.3338950002435013,
       "semente": 4
     },
     {
@@ -2956,7 +2956,7 @@
       "expandidos": 77,
       "gerados": 119,
       "pico_fronteira": 39,
-      "tempo_ms": 0.2602639997348888,
+      "tempo_ms": 0.3450349995546276,
       "semente": 4
     },
     {
@@ -3135,7 +3135,7 @@
       "expandidos": 242,
       "gerados": 296,
       "pico_fronteira": 48,
-      "tempo_ms": 0.7601359993714141,
+      "tempo_ms": 1.0189289996560547,
       "semente": 5
     },
     {
@@ -3314,7 +3314,7 @@
       "expandidos": 351,
       "gerados": 359,
       "pico_fronteira": 28,
-      "tempo_ms": 1.021294000565831,
+      "tempo_ms": 1.2655679993258673,
       "semente": 5
     },
     {
@@ -3525,7 +3525,7 @@
       "expandidos": 88,
       "gerados": 132,
       "pico_fronteira": 41,
-      "tempo_ms": 0.2898279999499209,
+      "tempo_ms": 0.3869439997288282,
       "semente": 5
     },
     {
@@ -3712,7 +3712,7 @@
       "expandidos": 360,
       "gerados": 384,
       "pico_fronteira": 44,
-      "tempo_ms": 1.1120469998786575,
+      "tempo_ms": 1.4789329998166068,
       "semente": 6
     },
     {
@@ -3899,7 +3899,7 @@
       "expandidos": 361,
       "gerados": 361,
       "pico_fronteira": 30,
-      "tempo_ms": 0.9575519998179516,
+      "tempo_ms": 1.2876330001745373,
       "semente": 6
     },
     {
@@ -4110,7 +4110,7 @@
       "expandidos": 79,
       "gerados": 122,
       "pico_fronteira": 41,
-      "tempo_ms": 0.26571800026431447,
+      "tempo_ms": 0.3569770005924511,
       "semente": 6
     },
     {
@@ -4289,7 +4289,7 @@
       "expandidos": 257,
       "gerados": 307,
       "pico_fronteira": 47,
-      "tempo_ms": 0.8007679998627282,
+      "tempo_ms": 1.0640580003382638,
       "semente": 7
     },
     {
@@ -4468,7 +4468,7 @@
       "expandidos": 354,
       "gerados": 356,
       "pico_fronteira": 36,
-      "tempo_ms": 0.9529079998173984,
+      "tempo_ms": 1.2644769994949456,
       "semente": 7
     },
     {
@@ -4663,7 +4663,7 @@
       "expandidos": 84,
       "gerados": 124,
       "pico_fronteira": 37,
-      "tempo_ms": 0.27542299994820496,
+      "tempo_ms": 0.36511500002234243,
       "semente": 7
     },
     {
@@ -4850,7 +4850,7 @@
       "expandidos": 261,
       "gerados": 283,
       "pico_fronteira": 41,
-      "tempo_ms": 0.7780739997542696,
+      "tempo_ms": 1.0137950002899743,
       "semente": 8
     },
     {
@@ -5037,7 +5037,7 @@
       "expandidos": 335,
       "gerados": 344,
       "pico_fronteira": 22,
-      "tempo_ms": 0.8896680001271307,
+      "tempo_ms": 1.1901679999937187,
       "semente": 8
     },
     {
@@ -5224,7 +5224,7 @@
       "expandidos": 48,
       "gerados": 85,
       "pico_fronteira": 38,
-      "tempo_ms": 0.16339600006176624,
+      "tempo_ms": 0.23124500057747355,
       "semente": 8
     },
     {
@@ -5443,7 +5443,7 @@
       "expandidos": 338,
       "gerados": 353,
       "pico_fronteira": 38,
-      "tempo_ms": 1.027943999361014,
+      "tempo_ms": 1.5549329991699778,
       "semente": 9
     },
     {
@@ -5662,7 +5662,7 @@
       "expandidos": 342,
       "gerados": 342,
       "pico_fronteira": 24,
-      "tempo_ms": 0.9014289998958702,
+      "tempo_ms": 1.2498440000854316,
       "semente": 9
     },
     {
@@ -5889,7 +5889,7 @@
       "expandidos": 104,
       "gerados": 157,
       "pico_fronteira": 47,
-      "tempo_ms": 0.35781699989456683,
+      "tempo_ms": 0.45580499954667175,
       "semente": 9
     },
     {
@@ -6076,7 +6076,7 @@
       "expandidos": 294,
       "gerados": 332,
       "pico_fronteira": 43,
-      "tempo_ms": 0.9314280005128239,
+      "tempo_ms": 1.1977400008618133,
       "semente": 10
     },
     {
@@ -6263,7 +6263,7 @@
       "expandidos": 344,
       "gerados": 349,
       "pico_fronteira": 26,
-      "tempo_ms": 1.0189490003540413,
+      "tempo_ms": 1.2018580000585644,
       "semente": 10
     },
     {
@@ -6458,7 +6458,7 @@
       "expandidos": 53,
       "gerados": 92,
       "pico_fronteira": 40,
-      "tempo_ms": 0.18594300036056666,
+      "tempo_ms": 0.24073300028248923,
       "semente": 10
     },
     {
@@ -6645,7 +6645,7 @@
       "expandidos": 298,
       "gerados": 335,
       "pico_fronteira": 40,
-      "tempo_ms": 0.9213680004904745,
+      "tempo_ms": 1.1525429999892367,
       "semente": 11
     },
     {
@@ -6824,7 +6824,7 @@
       "expandidos": 348,
       "gerados": 354,
       "pico_fronteira": 26,
-      "tempo_ms": 0.9369610006615403,
+      "tempo_ms": 1.1390839999876334,
       "semente": 11
     },
     {
@@ -7011,7 +7011,7 @@
       "expandidos": 58,
       "gerados": 88,
       "pico_fronteira": 31,
-      "tempo_ms": 0.18353399991610786,
+      "tempo_ms": 0.22609099960391177,
       "semente": 11
     },
     {
@@ -7190,7 +7190,7 @@
       "expandidos": 169,
       "gerados": 219,
       "pico_fronteira": 48,
-      "tempo_ms": 0.533217999873159,
+      "tempo_ms": 0.6421640000553452,
       "semente": 12
     },
     {
@@ -7369,7 +7369,7 @@
       "expandidos": 344,
       "gerados": 359,
       "pico_fronteira": 31,
-      "tempo_ms": 0.9498439994786168,
+      "tempo_ms": 1.1653110004772316,
       "semente": 12
     },
     {
@@ -7588,7 +7588,7 @@
       "expandidos": 55,
       "gerados": 92,
       "pico_fronteira": 38,
-      "tempo_ms": 0.187293000635691,
+      "tempo_ms": 0.2246610001748195,
       "semente": 12
     },
     {
@@ -7767,7 +7767,7 @@
       "expandidos": 222,
       "gerados": 264,
       "pico_fronteira": 45,
-      "tempo_ms": 0.6744590000380413,
+      "tempo_ms": 0.8258360003310372,
       "semente": 13
     },
     {
@@ -7946,7 +7946,7 @@
       "expandidos": 316,
       "gerados": 322,
       "pico_fronteira": 27,
-      "tempo_ms": 0.848272000439465,
+      "tempo_ms": 1.0226670001429738,
       "semente": 13
     },
     {
@@ -8165,7 +8165,7 @@
       "expandidos": 68,
       "gerados": 107,
       "pico_fronteira": 40,
-      "tempo_ms": 0.2296150005349773,
+      "tempo_ms": 0.27598399992712075,
       "semente": 13
     },
     {
@@ -8352,7 +8352,7 @@
       "expandidos": 301,
       "gerados": 338,
       "pico_fronteira": 35,
-      "tempo_ms": 0.9178959999189829,
+      "tempo_ms": 1.1188609996679588,
       "semente": 14
     },
     {
@@ -8539,7 +8539,7 @@
       "expandidos": 341,
       "gerados": 345,
       "pico_fronteira": 24,
-      "tempo_ms": 0.9164670000245678,
+      "tempo_ms": 1.0434080004415591,
       "semente": 14
     },
     {
@@ -8758,7 +8758,7 @@
       "expandidos": 76,
       "gerados": 116,
       "pico_fronteira": 39,
-      "tempo_ms": 0.2531119998820941,
+      "tempo_ms": 0.2890329997171648,
       "semente": 14
     },
     {
@@ -8945,7 +8945,7 @@
       "expandidos": 344,
       "gerados": 389,
       "pico_fronteira": 58,
-      "tempo_ms": 1.1722350000127335,
+      "tempo_ms": 1.2527600001703831,
       "semente": 15
     },
     {
@@ -9132,7 +9132,7 @@
       "expandidos": 364,
       "gerados": 364,
       "pico_fronteira": 29,
-      "tempo_ms": 0.9883769998850767,
+      "tempo_ms": 1.151389000369818,
       "semente": 15
     },
     {
@@ -9359,7 +9359,7 @@
       "expandidos": 67,
       "gerados": 111,
       "pico_fronteira": 44,
-      "tempo_ms": 0.23516700002801372,
+      "tempo_ms": 0.2745970004980336,
       "semente": 15
     },
     {
@@ -9538,7 +9538,7 @@
       "expandidos": 276,
       "gerados": 311,
       "pico_fronteira": 45,
-      "tempo_ms": 0.8571980006308877,
+      "tempo_ms": 1.0143399995286018,
       "semente": 16
     },
     {
@@ -9717,7 +9717,7 @@
       "expandidos": 327,
       "gerados": 328,
       "pico_fronteira": 35,
-      "tempo_ms": 0.874242999998387,
+      "tempo_ms": 1.107663000766479,
       "semente": 16
     },
     {
@@ -9920,7 +9920,7 @@
       "expandidos": 105,
       "gerados": 138,
       "pico_fronteira": 33,
-      "tempo_ms": 0.3297439998277696,
+      "tempo_ms": 0.42749000022013206,
       "semente": 16
     },
     {
@@ -10131,7 +10131,7 @@
       "expandidos": 309,
       "gerados": 351,
       "pico_fronteira": 53,
-      "tempo_ms": 0.9599010008969344,
+      "tempo_ms": 1.4516340006593964,
       "semente": 17
     },
     {
@@ -10342,7 +10342,7 @@
       "expandidos": 350,
       "gerados": 351,
       "pico_fronteira": 31,
-      "tempo_ms": 0.9414670003025094,
+      "tempo_ms": 1.4533100002154242,
       "semente": 17
     },
     {
@@ -10545,7 +10545,7 @@
       "expandidos": 60,
       "gerados": 99,
       "pico_fronteira": 39,
-      "tempo_ms": 0.20618199960154016,
+      "tempo_ms": 0.30371600041689817,
       "semente": 17
     },
     {
@@ -10732,7 +10732,7 @@
       "expandidos": 335,
       "gerados": 363,
       "pico_fronteira": 46,
-      "tempo_ms": 1.0333499994885642,
+      "tempo_ms": 1.469382000323094,
       "semente": 18
     },
     {
@@ -10919,7 +10919,7 @@
       "expandidos": 348,
       "gerados": 349,
       "pico_fronteira": 29,
-      "tempo_ms": 0.936317999730818,
+      "tempo_ms": 1.28152700017381,
       "semente": 18
     },
     {
@@ -11162,7 +11162,7 @@
       "expandidos": 64,
       "gerados": 109,
       "pico_fronteira": 45,
-      "tempo_ms": 0.22477300080936402,
+      "tempo_ms": 0.29288800033100415,
       "semente": 18
     },
     {
@@ -11349,7 +11349,7 @@
       "expandidos": 276,
       "gerados": 314,
       "pico_fronteira": 60,
-      "tempo_ms": 0.8650649997434812,
+      "tempo_ms": 1.2503079997259192,
       "semente": 19
     },
     {
@@ -11528,7 +11528,7 @@
       "expandidos": 353,
       "gerados": 356,
       "pico_fronteira": 28,
-      "tempo_ms": 0.977364999926067,
+      "tempo_ms": 1.3328909999472671,
       "semente": 19
     },
     {
@@ -11739,7 +11739,7 @@
       "expandidos": 70,
       "gerados": 114,
       "pico_fronteira": 44,
-      "tempo_ms": 0.24727399977564346,
+      "tempo_ms": 0.3443280002102256,
       "semente": 19
     },
     {
@@ -11926,7 +11926,7 @@
       "expandidos": 285,
       "gerados": 320,
       "pico_fronteira": 40,
-      "tempo_ms": 0.8756159995755297,
+      "tempo_ms": 1.2292640003579436,
       "semente": 20
     },
     {
@@ -12113,7 +12113,7 @@
       "expandidos": 342,
       "gerados": 350,
       "pico_fronteira": 22,
-      "tempo_ms": 1.0002760000134003,
+      "tempo_ms": 1.3169369995011948,
       "semente": 20
     },
     {
@@ -12300,7 +12300,7 @@
       "expandidos": 56,
       "gerados": 95,
       "pico_fronteira": 40,
-      "tempo_ms": 0.1912830002765986,
+      "tempo_ms": 0.25201300013577566,
       "semente": 20
     },
     {
@@ -12511,7 +12511,7 @@
       "expandidos": 334,
       "gerados": 360,
       "pico_fronteira": 50,
-      "tempo_ms": 1.0154350002267165,
+      "tempo_ms": 1.359235999188968,
       "semente": 21
     },
     {
@@ -12722,7 +12722,7 @@
       "expandidos": 352,
       "gerados": 354,
       "pico_fronteira": 28,
-      "tempo_ms": 0.9351540002171532,
+      "tempo_ms": 1.2350599999990663,
       "semente": 21
     },
     {
@@ -12917,7 +12917,7 @@
       "expandidos": 47,
       "gerados": 77,
       "pico_fronteira": 31,
-      "tempo_ms": 0.15490700025111437,
+      "tempo_ms": 0.20567499996104743,
       "semente": 21
     },
     {
@@ -13096,7 +13096,7 @@
       "expandidos": 337,
       "gerados": 361,
       "pico_fronteira": 46,
-      "tempo_ms": 1.0481479994268739,
+      "tempo_ms": 1.5158969999902183,
       "semente": 22
     },
     {
@@ -13275,7 +13275,7 @@
       "expandidos": 359,
       "gerados": 359,
       "pico_fronteira": 27,
-      "tempo_ms": 0.9612519997972413,
+      "tempo_ms": 1.278773000194633,
       "semente": 22
     },
     {
@@ -13470,7 +13470,7 @@
       "expandidos": 58,
       "gerados": 94,
       "pico_fronteira": 37,
-      "tempo_ms": 0.19622799936769297,
+      "tempo_ms": 0.2551199995650677,
       "semente": 22
     },
     {
@@ -13649,7 +13649,7 @@
       "expandidos": 338,
       "gerados": 354,
       "pico_fronteira": 59,
-      "tempo_ms": 1.0511530008443515,
+      "tempo_ms": 1.3454070003717788,
       "semente": 23
     },
     {
@@ -13828,7 +13828,7 @@
       "expandidos": 342,
       "gerados": 342,
       "pico_fronteira": 40,
-      "tempo_ms": 0.9144699997705175,
+      "tempo_ms": 1.2154939995525638,
       "semente": 23
     },
     {
@@ -14063,7 +14063,7 @@
       "expandidos": 88,
       "gerados": 120,
       "pico_fronteira": 31,
-      "tempo_ms": 0.2828390006470727,
+      "tempo_ms": 0.3805859996646177,
       "semente": 23
     },
     {
@@ -14250,7 +14250,7 @@
       "expandidos": 324,
       "gerados": 355,
       "pico_fronteira": 47,
-      "tempo_ms": 1.018831000692444,
+      "tempo_ms": 1.4395509997484623,
       "semente": 24
     },
     {
@@ -14437,7 +14437,7 @@
       "expandidos": 357,
       "gerados": 358,
       "pico_fronteira": 30,
-      "tempo_ms": 0.9719700001369347,
+      "tempo_ms": 1.3004960001126165,
       "semente": 24
     },
     {
@@ -14632,7 +14632,7 @@
       "expandidos": 53,
       "gerados": 92,
       "pico_fronteira": 39,
-      "tempo_ms": 0.1836180008467636,
+      "tempo_ms": 0.24248199952126015,
       "semente": 24
     },
     {
@@ -14827,7 +14827,7 @@
       "expandidos": 341,
       "gerados": 369,
       "pico_fronteira": 57,
-      "tempo_ms": 1.1091289998148568,
+      "tempo_ms": 1.361965000796772,
       "semente": 25
     },
     {
@@ -15022,7 +15022,7 @@
       "expandidos": 362,
       "gerados": 362,
       "pico_fronteira": 33,
-      "tempo_ms": 0.9894610002447735,
+      "tempo_ms": 1.2957070002812543,
       "semente": 25
     },
     {
@@ -15249,7 +15249,7 @@
       "expandidos": 72,
       "gerados": 111,
       "pico_fronteira": 35,
-      "tempo_ms": 0.24763199962762883,
+      "tempo_ms": 0.3257349999330472,
       "semente": 25
     },
     {
@@ -15428,7 +15428,7 @@
       "expandidos": 287,
       "gerados": 323,
       "pico_fronteira": 74,
-      "tempo_ms": 0.891076999323559,
+      "tempo_ms": 1.1790779999500955,
       "semente": 26
     },
     {
@@ -15607,7 +15607,7 @@
       "expandidos": 357,
       "gerados": 358,
       "pico_fronteira": 37,
-      "tempo_ms": 0.969939000242448,
+      "tempo_ms": 1.314488999923924,
       "semente": 26
     },
     {
@@ -15802,7 +15802,7 @@
       "expandidos": 60,
       "gerados": 92,
       "pico_fronteira": 33,
-      "tempo_ms": 0.1974420001715771,
+      "tempo_ms": 0.2569700000094599,
       "semente": 26
     },
     {
@@ -16013,7 +16013,7 @@
       "expandidos": 300,
       "gerados": 343,
       "pico_fronteira": 37,
-      "tempo_ms": 0.9474620001128642,
+      "tempo_ms": 1.2198160002299119,
       "semente": 27
     },
     {
@@ -16208,7 +16208,7 @@
       "expandidos": 359,
       "gerados": 363,
       "pico_fronteira": 23,
-      "tempo_ms": 0.9934399995472631,
+      "tempo_ms": 1.303734999964945,
       "semente": 27
     },
     {
@@ -16427,7 +16427,7 @@
       "expandidos": 59,
       "gerados": 101,
       "pico_fronteira": 42,
-      "tempo_ms": 0.21716800074500497,
+      "tempo_ms": 0.26968700058205286,
       "semente": 27
     },
     {
@@ -16622,7 +16622,7 @@
       "expandidos": 254,
       "gerados": 283,
       "pico_fronteira": 45,
-      "tempo_ms": 0.7888729996921029,
+      "tempo_ms": 1.0028119995695306,
       "semente": 28
     },
     {
@@ -16817,7 +16817,7 @@
       "expandidos": 338,
       "gerados": 345,
       "pico_fronteira": 27,
-      "tempo_ms": 0.9125679998760461,
+      "tempo_ms": 1.3439930007734802,
       "semente": 28
     },
     {
@@ -17020,7 +17020,7 @@
       "expandidos": 62,
       "gerados": 95,
       "pico_fronteira": 34,
-      "tempo_ms": 0.20187700010865228,
+      "tempo_ms": 0.26286899992555846,
       "semente": 28
     },
     {
@@ -17215,7 +17215,7 @@
       "expandidos": 352,
       "gerados": 377,
       "pico_fronteira": 45,
-      "tempo_ms": 1.0849919999600388,
+      "tempo_ms": 1.427648000571935,
       "semente": 29
     },
     {
@@ -17410,7 +17410,7 @@
       "expandidos": 359,
       "gerados": 361,
       "pico_fronteira": 27,
-      "tempo_ms": 0.9661490003054496,
+      "tempo_ms": 1.268904999960796,
       "semente": 29
     },
     {
@@ -17637,7 +17637,7 @@
       "expandidos": 104,
       "gerados": 149,
       "pico_fronteira": 41,
-      "tempo_ms": 0.33817399980762275,
+      "tempo_ms": 0.471819999802392,
       "semente": 29
     }
   ]
