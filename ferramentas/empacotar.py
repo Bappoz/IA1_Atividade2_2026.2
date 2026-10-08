@@ -14,7 +14,7 @@ def main():
     verificar()
     saida=RAIZ / "dist/IA1_Atividade2_241039645.zip"
     saida.parent.mkdir(exist_ok=True)
-    ignorados={".git",".venv","__pycache__",".pytest_cache",".cache","tmp","dist"}
+    ignorados={".git",".venv","venv",".vscode","__pycache__",".pytest_cache",".cache","tmp","dist"}
     arquivos=sorted(p for p in RAIZ.rglob("*") if p.is_file() and not ignorados.intersection(p.relative_to(RAIZ).parts))
     manifesto=[]
     prefixo="IA1_Atividade2_241039645"
